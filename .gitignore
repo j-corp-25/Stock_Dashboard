@@ -1,0 +1,20 @@
+# Rails specific patterns
+/backend_v2/.bundle
+/backend_v2/log/*
+/backend_v2/tmp/*
+!/backend_v2/log/.keep
+!/backend_v2/tmp/.keep
+/backend_v2/tmp/pids/*
+!/backend_v2/tmp/pids/
+!/backend_v2/tmp/pids/.keep
+/backend_v2/public/assets
+/backend_v2/.byebug_history
+/backend_v2/config/master.key
+
+# Node/React related ignore patterns (if you have any)
+/frontend/node_modules/
+/frontend/.env
+
+# General
+*.log
+.DS_Store

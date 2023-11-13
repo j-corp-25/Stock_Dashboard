@@ -1,0 +1,13 @@
+# For the backend (assuming it's a Rails project)
+backend_v2/db/schema.rb linguist-generated
+backend_v2/vendor/* linguist-vendored
+backend_v2/.bundle linguist-vendored
+backend_v2/log/* linguist-generated
+backend_v2/tmp/* linguist-generated
+
+# for frontend
+frontend/vendor/* linguist-vendored
+frontend/build/* linguist-generated
+
+# Global settings
+*.log linguist-generated
