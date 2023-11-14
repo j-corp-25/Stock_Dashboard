@@ -13,6 +13,13 @@ class User < ApplicationRecord
 
   before_validation :ensure_session_token
 
+  def self.find_by_credentials(identifier, password)
+    user = User.find_by(username: identifier)
+    user ||= User.find_by(email: identifier)
+    return nil unless user && user.authenticate(password)
+    user
+  end
+
   private
 
   def generate_unique_session_token
