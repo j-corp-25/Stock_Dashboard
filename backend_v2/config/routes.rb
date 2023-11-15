@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     resources :users, only: :create
     resource :session, only: [:show, :create, :destroy]
   end
-  # post 'api/test', to: 'application#test'
+  post 'api/test', to: 'application#test'
 end
