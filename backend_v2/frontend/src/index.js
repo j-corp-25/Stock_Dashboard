@@ -6,10 +6,15 @@ import store from "./store";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import csrfFetch, { restoreCSRF } from "./store/csrf";
+import { login, logout, signup, restoreSession } from './store/sessionSlice';
 
 if (process.env.NODE_ENV !== "production") {
   window.store = store;
   window.csrfFetch = csrfFetch;
+  window.login = login;
+  window.logout = logout;
+  window.signup = signup;
+  window.restoreSession = restoreSession;
 }
 
 const renderApp = () => {
